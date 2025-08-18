@@ -1,14 +1,12 @@
-import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
-import { theme } from "./theme";
-import { HeroContentLeft } from "./pages/HeroContentLeft";
+import { Router } from "./Router";
+import "@mantine/core/styles.css";
 
-
-
-export default function App() {
+const App = () => {
   return (
-    <MantineProvider theme={theme}>
-      <HeroContentLeft />
+    <MantineProvider>
+      <Router />
     </MantineProvider>
   );
-}
+};
+export default App;
